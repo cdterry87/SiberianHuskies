@@ -1,0 +1,13 @@
+#Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /huskies/
+
+#Protect my directories from unauthorized access
+Options All -Indexes
+ServerSignature Off
+IndexIgnore *
+
+#Reroute everything through index.php?p={PAGE}
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?page=$1 [L]
