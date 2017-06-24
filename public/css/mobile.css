@@ -1,0 +1,23 @@
+/* for 800px or less */
+@media screen and (max-width: 800px){
+	#header{height: 175px;}
+	#header #navigation ul{padding-top: 5px; float: left;}
+	#header #navigation ul li{padding-left: 0; padding-right: 10px;}
+	
+	.panel-body img, .item img, .img-thumbnail{height: auto; width: 100%;}
+	.item{margin-bottom: 15px;}
+}
+
+/* for 570px or less */
+@media screen and (max-width: 570px){
+	h1{font-size: 45px;}
+	#header{height: 85px;}
+	
+	#header #navigation ul li{display: none;}
+	
+	#header-image{display: none;}
+	
+	#subscribe{position: relative; right: auto; top: auto; margin-bottom: 15px; width: 100%;}
+	
+	.img-thumbnail{margin-bottom: 15px;}
+}
